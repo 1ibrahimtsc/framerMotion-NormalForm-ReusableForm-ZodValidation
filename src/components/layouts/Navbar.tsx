@@ -15,6 +15,7 @@ const Navbar = () => {
         <ul className=" space-x-5">
           <NavLink to="/">Home</NavLink>
           <NavLink to="/about">About</NavLink>
+          <NavLink to="/form">Form</NavLink>
           <NavLink to="/scrollanimation">Scroll Animation</NavLink>
           <Button>Login</Button>
         </ul>

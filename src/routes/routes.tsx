@@ -6,11 +6,12 @@ import MainLayout from "@/components/layouts/MainLayout";
 
 import { createBrowserRouter } from "react-router-dom";
 import ScrollAnimation from "@/pages/ScrollAnimation";
+import FormComponent from "@/pages/FormComponent";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    // element: <App />,
+    //element: <App />,
     element: <MainLayout />,
     children: [
       {
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "form",
+        element: <FormComponent />,
       },
       {
         path: "scrollanimation",

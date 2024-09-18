@@ -1,21 +1,18 @@
-import Container from "./components/Container";
-import Button3 from "./components/ui/button3";
-import Button1 from "./components/ui/button1";
-import Button2 from "./components/ui/button2";
-import Modal1 from "./components/ui/Modal1";
+import Container from "../components/Container";
+
 import { FormEvent, useState } from "react";
 import { z } from "zod";
-import NormalForm from "./components/NormalForm/NormalForm";
-import NormalFormZod from "./components/NormalForm/NormalFormZod";
+import NormalForm from "../components/NormalForm/NormalForm";
+import NormalFormZod from "../components/NormalForm/NormalFormZod";
 import {
   Form,
   FormSection,
   FormSubmit,
   Input,
-} from "./components/ReusableForm";
+} from "../components/ReusableForm";
 import { FieldValues, SubmitHandler, useForm } from "react-hook-form";
 
-function App() {
+const FormComponent = () => {
   const [modal, setModal] = useState(false);
   const {
     handleSubmit,
@@ -68,6 +65,6 @@ function App() {
       </Form>
     </Container>
   );
-}
+};
 
-export default App;
+export default FormComponent;
